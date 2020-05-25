@@ -3,7 +3,7 @@ from unittest import TestCase
 
 class TestHand(TestCase):
 
-	#confirm an append Card() is now in self.cardsinhand array
+	#confirm an append Card is now in self.cardsinhand array
 	def test_add_card(self):
 		testRank = ?
 		testSuit = ?
