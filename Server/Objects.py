@@ -31,7 +31,7 @@ class Hand:
         return True
 
 class Deck:
-    def __int__(self):
+    def __init__(self):
         self.deckarray = []
 
     def initialize(self):
