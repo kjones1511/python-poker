@@ -35,13 +35,21 @@ class Hand:
         return True
 
 class Deck:
-    def __init__(self):
+    def __init__(self, deckCount = None, file = None ):
         self.deckarray = []
+        if file == None:
+            cardCount = deckCount * 52
+            suits = ["heart", "club", "diamond", "spades"]
+            ranks = ["2", "3"......."Jack", "Queen", "King", "Ace"]
+            for n in cardCount:
+                print("card")
+        else:
+            Deck.initialize(file)
 
+
+    #todo: doesn't work, return to build later. referenced in Deck.__init__
     def initialize(self):
-
         def file_read(fname):
-
             with open(fname) as f:
                 # Content_list is the list that contains the read lines.
                 for line in f:

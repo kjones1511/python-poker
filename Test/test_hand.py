@@ -1,20 +1,21 @@
 from unittest import TestCase
+from Objects import *
 
 
 class TestHand(TestCase):
 
 	#confirm an append Card is now in self.cardsinhand array
 	def test_add_card(self):
-		testRank = ?
-		testSuit = ?
-		testCard = ?
-		testHand = Hand()
+		testRank = "queen"
+		testSuit = "clubs"
+		testCard = Card(testSuit,testRank)
+		testHand = Hand("Jake")
 
-		#should be a Card object
+		testHand.add_card(testCard)
+
+		#should return only card in Hand array
 		expectedCard = testHand.cardsinhand[0]
 
-		logic1 = expectedCard.suit == testSuit
-		logic2 = testHand.cardsinhand[0].rank == testRank
-		logic = logic1 and logic2
-		print("run test case")
-		self.fail()
+		#confirm the suit and rank are expected and exist
+		self.assertEqual(expectedCard.suit, testSuit, "fails if built card has incorrect suit")
+		self.assertEqual(expectedCard.rank, testRank, "fails if built card has incorrect rank")
