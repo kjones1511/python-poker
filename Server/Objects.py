@@ -7,15 +7,19 @@ class Cat:
         print( self.name + " runs")
 
 class Card:
+    # we expect suit and rank to both be string inputs
+    # value will be a 2 element array containing the card's rank and suit
     def __init__(self, suit, rank):
         self.suit = suit
         self.rank = rank
         self.value = [rank, suit]
 
+    # we expect display to print the rank and suit of the defined card object
     def display(self):
         print(self.rank + " of " + self.suit)
 
 class Hand:
+    #intialize function we expect the class Hand to inherit a Player name in the form of a string "player" and initialize an empty array called cardsinhand
     def __init__(self, player):
        self.cardsinhand = []
        self.player = player
@@ -31,7 +35,7 @@ class Hand:
         return True
 
 class Deck:
-    def __int__(self):
+    def __init__(self):
         self.deckarray = []
 
     def initialize(self):
