@@ -46,6 +46,12 @@ class Deck:
         else:
             Deck.initialize(file)
 
+    def popCard(self):
+        pass
+
+    def shuffle(self):
+        pass
+
 
     #todo: doesn't work, return to build later. referenced in Deck.__init__
     def initialize(self):
