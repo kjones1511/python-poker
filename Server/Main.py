@@ -26,7 +26,4 @@ def main():
     deck1 = Deck()
     deck1.initialize()
 
-
-
-
 main()
